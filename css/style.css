@@ -22,17 +22,6 @@ nav .container {
     width: 70%;
 }
 
- .buttons {
-    border: none;
-    border-radius: 18px;
-    padding: 10px 15px;
-    text-align: center;
-}
-
-#login {
-    background-color: white;
-}
-
  #links-bar ul {
     display: flex;
     flex-direction: row;
@@ -42,7 +31,20 @@ nav .container {
 }
 
 #links-bar ul li {
+    font-size: 13px;
     color: white;
+}
+
+.buttons {
+    border: none;
+    border-radius: 18px;
+    padding: 10px 15px;
+    text-align: center;
+}
+
+#login {
+    background-color: white;
+    font-size: 12px;
 }
 /* /nav */
 
@@ -64,13 +66,15 @@ header .inner-header {
 
 header .inner-header h1 {
     color: white;
+    font-size: 2.5em;
     margin-bottom: 12px;
 }
 
 header .inner-header p {
     color: white;
     text-align: center;
-    max-width: 550px;
+    line-height: 160%;
+    max-width: 600px;
     margin-bottom: 5px; 
 }
 
@@ -87,64 +91,87 @@ header .inner-header .buttons-container {
 }
 /* /header */
 
+/* main  */
+main section {
+    padding: 60px 0 60px 0;
+}
 
+main section .container {
+    max-width: 900px;
+    margin: auto;
+}
 
-
-
-.site-desc {
+main section .inner-section {
     display: flex;
-    gap: 10px;
-    border: 2px dotted yellowgreen; /* to be deleted in final layout */
-    padding: 50px;
+    flex-direction: row;
+    justify-content: space-between;
+    gap: 50px;
 }
 
-main img {
-    border: 1px solid fuchsia; /* to be deleted in final layout */
-    width: 250px;
-    height: 250px;
+main section:nth-child(2n) .inner-section {
+    flex-direction: row-reverse;
 }
 
-h2 {
-    border: 1px solid red; /* to be deleted in final layout */
-    width: 100%; 
-    height: 80px; 
-    align-self: baseline;
+main .reverse-section {
+    background-color: #f6f6f6;
 }
 
-aside {
-    border: 1px solid blue; /* to be deleted in final layout */
-    width: 400px; 
-    height: 100px; 
+main section .inner-section img {
+    width: 60%;
 }
 
-.site-desc-end {
+main .inner-section .side-text {
+    max-width: 60%; 
+    min-width: 30%; 
+    display: flex;
+    flex-direction: column;
+    flex-grow: 1
+}
+
+main h2 {
+    font-size: 2.5em;
+    padding-bottom: 20px;
+}
+
+main p {
+    line-height: 160%;
+    padding-bottom: 10px;
+}
+
+main .bottom-main-section {
+    background-color: #f6f6f6;
+}
+
+main section .bottom {
+    text-align: center;
     display: flex;
     flex-direction: column;
     align-items: center;
-    justify-content: center;
-    gap: 10px;
-    border: 2px dotted yellowgreen; /* to be deleted in final layout */
-    padding: 50px;
+}
+
+main section .bottom-main-section .bottom img {
     width: 100%;
+    padding-bottom: 20px;
 }
 
-.site-desc-end h2 {
-    width: 400px;
-    height: 40px;
-    align-self: center;
+main section .bottom #button-section-bottom img {
+    overflow: hidden;
 }
 
-.site-desc-end img {
-    width: 100%;
-    margin-bottom: 50px;
+main section .bottom h3 {
+    font-size: 1.5em;
+    padding-bottom: 30px;
 }
 
-.site-desc-end h3 {
-    border: 1px solid red; /* to be deleted in final layout */
-    width: 200px;
-    height: 30px;
-    align-self: center;
-}
+main section .bottom #mac-download-button {
+    color: white;
+    background-color: #7289da;
+} 
+/* /main */
+
+
+
+
 
 footer {
     background-color: grey; /* random colour, to be adj in final layout */ 
