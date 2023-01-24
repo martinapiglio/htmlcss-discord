@@ -211,6 +211,12 @@ footer #footer-inner #footer-left #language img {
     width: 10%;
 }
 
+footer #footer-inner #footer-left #social img {
+    width: 13%;
+    padding-right: 10px;
+} 
+
+
 footer #footer-inner #footer-right {
     display: flex;
     flex-flow: row wrap;
@@ -250,3 +256,13 @@ footer #footer-end {
     background-color: #7289da;
 }
 /* /footer */
+
+
+/* wave styling */
+.wave-transition {
+    filter: invert(96%); 
+}
+
+.reverse {
+    transform: rotate(180deg);
+}
