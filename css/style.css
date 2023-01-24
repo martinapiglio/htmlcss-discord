@@ -19,6 +19,7 @@ nav .container {
 }
 
 .logo img {
+    cursor: pointer;
     width: 70%;
 }
 
@@ -40,6 +41,7 @@ nav .container {
     border-radius: 18px;
     padding: 10px 15px;
     text-align: center;
+    cursor: pointer;
 }
 
 #login {
@@ -83,6 +85,10 @@ header .inner-header .buttons-container {
     flex-flow: row wrap;
     justify-content: center;
     gap: 10px;
+}
+
+#download-button {
+    background-color: white;
 }
 
 #open-button {
@@ -212,6 +218,7 @@ footer #footer-inner #footer-left #language img {
 }
 
 footer #footer-inner #footer-left #social img {
+    cursor: pointer;
     width: 13%;
     padding-right: 10px;
 } 
@@ -265,4 +272,28 @@ footer #footer-end {
 
 .reverse {
     transform: rotate(180deg);
+}
+
+/* button + links hover styling */
+#login:hover, #download-button:hover {
+    transition-duration: .2s;
+    color: #7289da;
+    box-shadow: 3px 3px 8px rgba(0,0,0,0.5);
+}
+
+#open-button:hover {
+    transition-duration: .2s;
+    background-color: #565c60;
+    box-shadow: 3px 3px 8px rgba(0,0,0,0.5);
+}
+
+#mac-download-button:hover, #sign-up:hover {
+    transition-duration: .2s;
+    background-color: #949ae9;
+    box-shadow: 3px 3px 8px rgba(0,0,0,0.5);
+}
+
+li:hover {
+    cursor: pointer;
+    text-decoration: underline;
 }
