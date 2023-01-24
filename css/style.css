@@ -18,7 +18,7 @@ nav .container {
     min-height: 70px;
 }
 
-#logo-top img {
+.logo img {
     width: 70%;
 }
 
@@ -169,47 +169,84 @@ main section .bottom #mac-download-button {
 } 
 /* /main */
 
-
-
-
-
+/* footer */
 footer {
-    background-color: grey; /* random colour, to be adj in final layout */ 
+    background-color: #23272a;
     padding: 50px;
 }
 
-.flex-footer {
+footer .container {
+    max-width: 900px;
+    margin: auto;
+}
+
+footer #footer-inner {
     display: flex;
+    flex-flow: row wrap;
     justify-content: space-between;
-    flex-wrap: wrap;
-    border: 1px solid green; /* to be deleted in final layout */
-    padding: 5px; /* to be deleted in final layout */
-    padding-bottom: 20px;
-    border-bottom-color: black;
+    gap: 40px; 
 }   
 
-.footer-lists {
-    border: 1px dashed orange; /* to be deleted in final layout */
-    width: 100px;
-    height: 150px;
+footer #footer-inner #footer-left {
+    max-width: 200px;
 }
 
-.footer-lists ul {
-    list-style-type: none;
+footer #footer-inner #footer-left h4 {
+    color: #7289da;
+    font-size: 1.5em;
+    padding-bottom: 10px;
 }
 
-#Contatti {
+footer #footer-inner #footer-left #language {
     display: flex;
-    flex-direction: column;
+    align-items: center;
     gap: 5px;
+
+    color: white;
+    font-size: 12px;
+    padding-bottom: 10px;
 }
 
-#page-end {
-    padding-top: 10px;
+footer #footer-inner #footer-left #language img {
+    width: 10%;
 }
 
-#logo-bottom, #sign-up {
-    border: 1px solid green; /* to be deleted in final layout */
-    width: 80px;
-    height: 40px;
+footer #footer-inner #footer-right {
+    display: flex;
+    flex-flow: row wrap;
+    flex-grow: 1;
 }
+
+footer #footer-inner #footer-right div {
+    flex-grow: 1;   
+}
+
+footer #footer-inner #footer-right div h5 {
+    color: #7289da;
+    padding-bottom: 5px;  
+}
+
+footer #footer-inner #footer-right div ul {
+    list-style-type: none;
+    color: white;
+    font-size: 12px;
+    line-height: 250%;
+}
+
+footer hr {
+    border: 1px solid #7289da;
+    margin: 20px 0 20px 0;
+}
+
+footer #footer-end {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+#sign-up {
+    color: white;
+    font-size: 12px;
+    background-color: #7289da;
+}
+/* /footer */
