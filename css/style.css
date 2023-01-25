@@ -161,11 +161,11 @@ main section .bottom-main-section .bottom img {
     padding-bottom: 20px;
 }
 
-main section .bottom #button-section-bottom img {
-    overflow: hidden;
-}
-
 main section .bottom h3 {
+    background-image: url("../img/stars.svg");
+    background-size: contain;
+    background-repeat: no-repeat;
+
     font-size: 1.5em;
     padding-bottom: 30px;
 }
@@ -268,7 +268,7 @@ footer #footer-end {
 /* wave styling */
 .wave-transition {
     filter: invert(96%);
-    margin: -4px;  /* to be double-checked if correct */
+    display: block; /* correzione per spazio bianco tra section e img wave */
 }
 
 .reverse {
