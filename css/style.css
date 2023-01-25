@@ -42,6 +42,7 @@ nav .container {
     padding: 10px 15px;
     text-align: center;
     cursor: pointer;
+    transition: 0.2s; /* dissolvenza in entrata e in uscita */
 }
 
 #login {
@@ -276,24 +277,27 @@ footer #footer-end {
 
 /* button + links hover styling */
 #login:hover, #download-button:hover {
-    transition-duration: .2s;
     color: #7289da;
     box-shadow: 3px 3px 8px rgba(0,0,0,0.5);
 }
 
 #open-button:hover {
-    transition-duration: .2s;
     background-color: #565c60;
     box-shadow: 3px 3px 8px rgba(0,0,0,0.5);
 }
 
 #mac-download-button:hover, #sign-up:hover {
-    transition-duration: .2s;
     background-color: #949ae9;
     box-shadow: 3px 3px 8px rgba(0,0,0,0.5);
 }
 
-li:hover {
+li a {
+    color: white;
+    text-decoration: none;
+}
+
+li a:hover {
+    color: white;
     cursor: pointer;
     text-decoration: underline;
 }
